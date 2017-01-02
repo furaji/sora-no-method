@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-set -eu
+set -u
 
 BOLD=$'\e[1m'
 RESET=$'\e[0m'
+RED=$'\e[31m'
 GREEN=$'\e[32m'
 MAGENTA=$'\e[35m'
 
@@ -17,7 +18,7 @@ setup() {
 }
 
 assert-天体のメソッド() {
-  diff <(echo 天体のメソッド) -
+  diff <(echo 天体のメソッド) "$1"
 }
 
 LANGS+=(c++)
@@ -82,5 +83,9 @@ setup
 
 for lang in "${LANGS[@]}"; do
   printf "${BOLD}test:$RESET $MAGENTA%15s$RESET" "$lang"
-  "run-$lang" | assert-天体のメソッド && echo "  ${GREEN}ok$RESET"
+  "run-$lang" 2>"$BUILD/$lang.stderr" >"$BUILD/$lang.stdout"
+  [[ $? -ne 0 ]] && echo "  ${RED}error$RESET" && cat "$BUILD/$lang.stderr" && exit 1
+  assert-天体のメソッド "$BUILD/$lang.stdout" >"$BUILD/$lang.diff"
+  [[ $? -ne 0 ]] && echo "  ${RED}fail$RESET" && cat "$BUILD/$lang.diff" && exit 1
+  echo "  ${GREEN}ok$RESET"
 done
