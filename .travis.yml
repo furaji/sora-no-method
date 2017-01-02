@@ -2,4 +2,10 @@ language: ruby # default
 os: osx
 osx_image: xcode8.2
 
+before_install:
+  - brew update
+
+install:
+  - brew install dmd python3
+
 script: ./test.sh
