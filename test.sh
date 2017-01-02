@@ -13,6 +13,15 @@ BUILD="$ROOT/.build"
 LANGS=()
 
 setup() {
+  echo "$BOLD"
+  cat <<LOGO
+          メ  天
+          ソ  体
+          ッ -の-
+          ド
+LOGO
+  echo "$RESET"
+
   rm -rf "$BUILD"
   mkdir -p "$BUILD"
 }
