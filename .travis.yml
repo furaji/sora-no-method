@@ -1,0 +1,5 @@
+language: ruby # default
+os: osx
+osx_image: xcode8.2
+
+script: ./test.sh
