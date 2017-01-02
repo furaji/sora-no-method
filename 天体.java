@@ -6,6 +6,6 @@ public class 天体
     }
 
     void メソッド() {
-        System.out.print("天体のメソッド");
+        System.out.println("天体のメソッド");
     }
 }

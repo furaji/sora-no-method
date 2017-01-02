@@ -7,7 +7,7 @@
 @implementation 天体
 - (void)メソッド {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-    [[NSFileHandle fileHandleWithStandardOutput] writeData: [@"天体のメソッド" dataUsingEncoding: NSUTF8StringEncoding]];
+    [[NSFileHandle fileHandleWithStandardOutput] writeData: [@"天体のメソッド\n" dataUsingEncoding: NSUTF8StringEncoding]];
     [pool release];
 }
 @end

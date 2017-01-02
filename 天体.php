@@ -2,7 +2,7 @@
 class 天体
 {
     public function メソッド() {
-        echo '天体のメソッド';
+        echo '天体のメソッド', PHP_EOL;
     }
 }
 

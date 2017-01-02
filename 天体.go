@@ -5,7 +5,7 @@ import "fmt"
 type 天体 struct {}
 
 func (p *天体) メソッド() {
-      fmt.Printf("天体のメソッド")
+      fmt.Println("天体のメソッド")
 }
 
 func main() {
