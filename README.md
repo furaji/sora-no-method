@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/furaji/sora-no-method.svg?branch=master)](https://travis-ci.org/furaji/sora-no-method)
+
 -
 =
 
