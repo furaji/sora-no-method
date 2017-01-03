@@ -6,6 +6,6 @@ before_install:
   - brew update
 
 install:
-  - brew install dmd python3
+  - brew install dmd io python3
 
 script: ./test.sh
