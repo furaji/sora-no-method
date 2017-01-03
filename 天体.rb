@@ -2,7 +2,7 @@
 
 class << 天体
   def メソッド
-    print '天体のメソッド'
+    puts '天体のメソッド'
   end
 end
 

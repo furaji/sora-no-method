@@ -1,7 +1,9 @@
 use utf8;
-use encoding 'utf-8';
+use 5.010;
 
 package 天体;
+
+binmode(STDOUT, ":utf8");
 
 sub new {
     my $class = shift;
@@ -10,7 +12,7 @@ sub new {
 }
 
 sub メソッド{
-    print '天体のメソッド';
+    say '天体のメソッド';
 }
 
 $天体 = new 天体();
