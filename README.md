@@ -8,6 +8,7 @@
 - [C++](天体.cpp)
 - [D](天体.d)
 - [Go](天体.go)
+- [Io](天体.io)
 - [Java](天体.java)
 - [JavaScript](天体.js)
 - [Objective-C](天体.m)

@@ -46,6 +46,11 @@ run-go() {
   go run "$ROOT/天体.go"
 }
 
+LANGS+=(io)
+run-io() {
+  io "$ROOT/天体.io"
+}
+
 LANGS+=(java)
 run-java() {
   javac -d "$BUILD" "$ROOT/天体.java"
