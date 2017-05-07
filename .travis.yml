@@ -4,6 +4,8 @@ osx_image: xcode8.2
 
 before_install:
   - brew update
+  - curl -s https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly
+  - export PATH="$PATH:$HOME/.cargo/bin"
 
 install:
   - brew install dmd io python3
