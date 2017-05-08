@@ -1,11 +1,8 @@
 [![Build Status](https://travis-ci.org/furaji/sora-no-method.svg?branch=master)](https://travis-ci.org/furaji/sora-no-method)
 
--
-=
+# 天体のメソッドを実装
 
-天体のメソッドを実装
-
--
+- 
 
 - [C++](天体.cpp)
 - [D](天体.d)
