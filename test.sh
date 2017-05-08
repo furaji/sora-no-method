@@ -88,6 +88,12 @@ run-ruby() {
   ruby "$ROOT/天体.rb"
 }
 
+LANGS+=(rust)
+run-rust() {
+  rustc -o "$BUILD/rust" "$ROOT/天体.rs"
+  "$BUILD/rust"
+}
+
 LANGS+=(swift)
 run-swift() {
   swift "$ROOT/天体.swift"

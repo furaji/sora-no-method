@@ -18,4 +18,5 @@
 - [Perl](天体.pl)
 - [Python](天体.py)
 - [Ruby](天体.rb)
+- [Rust](天体.rs)
 - [Swift](天体.swift)
