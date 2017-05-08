@@ -90,7 +90,8 @@ run-ruby() {
 
 LANGS+=(rust)
 run-rust() {
-  rustc "$ROOT/天体.rs"
+  rustc -o "$BUILD/rust" "$ROOT/天体.rs"
+  "$BUILD/rust"
 }
 
 LANGS+=(swift)
