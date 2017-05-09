@@ -8,6 +8,6 @@ before_install:
   - export PATH="$PATH:$HOME/.cargo/bin"
 
 install:
-  - brew install dmd io python3
+  - brew install dmd io planck python3
 
 script: ./test.sh

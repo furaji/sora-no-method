@@ -36,6 +36,11 @@ run-c++() {
   "$BUILD/c++"
 }
 
+LANGS+=(clojure)
+run-clojure() {
+  planck "$ROOT/天体.clj"
+}
+
 LANGS+=(d)
 run-d() {
   rdmd "$ROOT/天体.d"
