@@ -18,3 +18,4 @@
 - [Ruby](天体.rb)
 - [Rust](天体.rs)
 - [Swift](天体.swift)
+- [Bash](天体.bash)

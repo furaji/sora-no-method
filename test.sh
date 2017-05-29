@@ -104,6 +104,11 @@ run-swift() {
   swift "$ROOT/天体.swift"
 }
 
+LANGS+=(bash)
+run-bash() {
+  bash "$ROOT/天体.bash"
+}
+
 setup
 
 for lang in "${LANGS[@]}"; do
