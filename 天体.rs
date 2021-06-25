@@ -1,5 +1,3 @@
-#![feature(non_ascii_idents)]
-
 struct 天体;
 
 impl 天体 {
