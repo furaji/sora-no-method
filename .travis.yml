@@ -4,7 +4,7 @@ osx_image: xcode8.2
 
 before_install:
   - brew update
-  - curl -s https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly
+  - curl -s https://static.rust-lang.org/rustup.sh | sh -s
   - export PATH="$PATH:$HOME/.cargo/bin"
 
 install:
